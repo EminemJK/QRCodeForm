@@ -37,6 +37,7 @@
             this.picBoxLogo = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLogoClear = new System.Windows.Forms.Button();
             this.numLogoBorderSize = new System.Windows.Forms.NumericUpDown();
             this.lbLogoBorderSize = new System.Windows.Forms.Label();
             this.numLogoSize = new System.Windows.Forms.NumericUpDown();
@@ -49,7 +50,6 @@
             this.numQRSize = new System.Windows.Forms.NumericUpDown();
             this.btnSavePic = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.btnLogoClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxQRCode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxLogo)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -158,6 +158,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "生成设置";
             // 
+            // btnLogoClear
+            // 
+            this.btnLogoClear.Location = new System.Drawing.Point(321, 103);
+            this.btnLogoClear.Name = "btnLogoClear";
+            this.btnLogoClear.Size = new System.Drawing.Size(29, 23);
+            this.btnLogoClear.TabIndex = 21;
+            this.btnLogoClear.Text = "×";
+            this.btnLogoClear.UseVisualStyleBackColor = true;
+            this.btnLogoClear.Click += new System.EventHandler(this.btnLogoClear_Click);
+            // 
             // numLogoBorderSize
             // 
             this.numLogoBorderSize.Location = new System.Drawing.Point(306, 159);
@@ -204,7 +214,7 @@
             // 
             this.plBackgroundColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.plBackgroundColor.ForeColor = System.Drawing.Color.White;
-            this.plBackgroundColor.Location = new System.Drawing.Point(234, 73);
+            this.plBackgroundColor.Location = new System.Drawing.Point(237, 73);
             this.plBackgroundColor.Name = "plBackgroundColor";
             this.plBackgroundColor.Size = new System.Drawing.Size(59, 24);
             this.plBackgroundColor.TabIndex = 16;
@@ -225,18 +235,18 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(175, 78);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 14;
-            this.label5.Text = "条码色：";
+            this.label5.Text = "前背景色：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 78);
+            this.label4.Location = new System.Drawing.Point(47, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.Size = new System.Drawing.Size(53, 12);
             this.label4.TabIndex = 13;
-            this.label4.Text = "前背景色：";
+            this.label4.Text = "条码色：";
             // 
             // btnSearchLogo
             // 
@@ -269,16 +279,6 @@
             this.btnSavePic.Text = "另存为...";
             this.btnSavePic.UseVisualStyleBackColor = true;
             this.btnSavePic.Click += new System.EventHandler(this.btnSavePic_Click);
-            // 
-            // btnLogoClear
-            // 
-            this.btnLogoClear.Location = new System.Drawing.Point(321, 103);
-            this.btnLogoClear.Name = "btnLogoClear";
-            this.btnLogoClear.Size = new System.Drawing.Size(29, 23);
-            this.btnLogoClear.TabIndex = 21;
-            this.btnLogoClear.Text = "×";
-            this.btnLogoClear.UseVisualStyleBackColor = true;
-            this.btnLogoClear.Click += new System.EventHandler(this.btnLogoClear_Click);
             // 
             // MainForm
             // 
